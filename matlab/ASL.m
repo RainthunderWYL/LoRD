@@ -1,8 +1,8 @@
 function SLInfo = ASL(B1,B2,B3,x1,x2,x3,Parameters,varargin)
 fprintf('######## ASL: Analyzing Singular Lines ...\n');
 % Load Parameters
-ShowThresScalorProfile = Parameters.ASL_ShowThresScalorProfile;
-ScalorThreshold = Parameters.ASL_ScalorThreshold;
+ShowThresScalarProfile = Parameters.ASL_ShowThresScalarProfile;
+ScalarThreshold = Parameters.ASL_ScalarThreshold;
 NumSplitBlocks = Parameters.NumRAMBlock;
 AnalyzeAllGrids = Parameters.ASL_AnalyzeAllGrids;
 FixTrace = Parameters.ASL_FixTrace;
@@ -35,7 +35,7 @@ else
 end
 
 % Preview histogram of data_thres
-if ShowThresScalorProfile == 1
+if ShowThresScalarProfile == 1
     figure1 = figure;
     h_hist = histogram(data_thres(:),500);
     bin_counts = h_hist.BinCounts;
@@ -44,7 +44,7 @@ if ShowThresScalorProfile == 1
     close(figure1);
 
     figure1 = figure;
-    xlabel('Threshold Scalor Value','Interpreter','latex');
+    xlabel('Threshold Scalar Value','Interpreter','latex');
     ylabel('Counts','Interpreter','latex');
     plot(bin_center,bin_counts);
     set(gca,'yscale','log');
@@ -55,7 +55,7 @@ end
 
 % Select subset
 if AnalyzeAllGrids == 0
-    b = data_thres >= ScalorThreshold;
+    b = data_thres >= ScalarThreshold;
 else
     b = true(size(B.e1));
 end

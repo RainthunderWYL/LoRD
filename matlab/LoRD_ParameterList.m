@@ -13,8 +13,8 @@ Parameters.OutputExtraData = 1;    % Output Extra Data
 
 % ASL Parameters
 Parameters.ASL_AnalyzeAllGrids = 0;    % Analyze all grids
-Parameters.ASL_ShowThresScalorProfile = 0;    % Depict histogram of DataThres without running ASL
-Parameters.ASL_ScalorThreshold = 150;    % Threshold of DataThres
+Parameters.ASL_ShowThresScalarProfile = 0;    % Depict histogram of DataThres without running ASL
+Parameters.ASL_ScalarThreshold = 150;    % Threshold of DataThres
 Parameters.ASL_FixTrace = 0;    % Fix trace of Jacobian when needed by M = M-1/3*trM*I
 
 % ANP Parameters
