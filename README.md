@@ -12,4 +12,3 @@ ANP locates and classifies the 3D null points based on the theory by Parnel et a
 
 APNP analyzes the 2D neutral points locally projected on the Maximal Shear Plane defined by users.
 
-LoRD is implemented in both matlab and C languages.
