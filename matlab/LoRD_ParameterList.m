@@ -16,6 +16,7 @@ Parameters.ASL_AnalyzeAllGrids = 0;    % Analyze all grids
 Parameters.ASL_ShowThresScalarProfile = 0;    % Depict histogram of DataThres without running ASL
 Parameters.ASL_ScalarThreshold = 150;    % Threshold of DataThres
 Parameters.ASL_FixTrace = 0;    % Fix trace of Jacobian when needed by M = M-1/3*trM*I
+Parameters.ARD_AnalyzeLocalEffects = 1; % Enable analyzing local effects
 
 % ANP Parameters
 Parameters.ANP_NPJacobianMethod = 1;    % If 1: First calculate Jacobian by central difference then interp 
