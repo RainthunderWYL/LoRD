@@ -8,6 +8,6 @@
 
 **ANP** locates and classifies the 3D null points based on the theory by Parnel et al. 1996.
 
-**APNP** analyzes the 2D neutral points projected on a plane near a cell which can be defined by users.
+**APNP** analyzes the 2D neutral points projected on a plane near a cell which can be defined by users (please don't use this function unless you know its details!).
 
-**Please refer to the Wiki page for detailed introduction.**
+**Please refer to the Wiki page for details.**
