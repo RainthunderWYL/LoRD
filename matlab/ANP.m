@@ -2,8 +2,8 @@ function NPInfo = ANP( B1,B2,B3,x1,x2,x3,Parameters)
 % NPInfo.Data: x1,x2,x3,NPType;
 % NPInfo.ExtraData: M11,M21,M31,M12,M22,M32,M13,M23,M33
 
-BThres = Parameters.NullBThres;
-NiterMax = Parameters.NumMaxIter;
+BThres = Parameters.ANP_NullBThres;
+NiterMax = Parameters.ANP_NumMaxIter;
 NumSplitBlocks = Parameters.NumRAMBlock;
 FixTrace  = Parameters.ANP_FixTrace;
 
@@ -134,6 +134,10 @@ if ~isempty(NPInfo_Cache)
         NPInfo.ExtraData = NPInfo_Cache(:,5:end);
     end
 end
+
+%Output interface
+func_ANP_Output(NPInfo,Parameters);
+
 fprintf('    >>>> ANP: Done!\n');
 end
 

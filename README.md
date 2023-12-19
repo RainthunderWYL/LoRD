@@ -10,4 +10,4 @@
 
 **APNP** analyzes the 2D neutral points projected on a plane near a cell which can be defined by users (please don't use this function unless you know its details!).
 
-**Please refer to the Wiki page for details.**
+**Please refer to the [Wiki](https://github.com/RainthunderWYL/LoRD/wiki) page for details.**

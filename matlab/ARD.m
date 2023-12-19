@@ -198,7 +198,7 @@ clear RDInfo_Data RDInfo_ExtraData;
 clear cache_DNpara cache_De1 cache_De2 cache_De3 cache_DNperpOverB cache_CurlN cache_BxCurlN; 
 
 %Output interface
-func_IO_Output(RDInfo,Parameters);
+func_ARD_Output(RDInfo,Parameters);
 
 fprintf('    >>>> Done !!!\n');
 end
